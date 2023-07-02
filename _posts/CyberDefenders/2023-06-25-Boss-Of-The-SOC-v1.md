@@ -4,11 +4,10 @@ classes: wide
 header:
   teaser: /assets/images/CyberDefenders/Boss_SOC_V1/Boss_Of__The_SOC__v1.jpg
 description: ""
-ribbon: ForestGreen
+ribbon: DarkSlateGray
 tags: "DFIR"
 categories:
   - Cyber Defenders
-  - Digital Forensics
 ---
 
 <span style="color: #909090">Category: Cyber Defenders</span>

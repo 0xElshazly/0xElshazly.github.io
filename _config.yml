@@ -24,7 +24,7 @@ url                      : # the base hostname & protocol for your site e.g. "ht
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/main/Logo.png"
+logo                     : "/assets/images/main/logo.svg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -104,16 +104,16 @@ analytics:
 # Site Author
 author:
   name             : "Mohamed Ayman Elshazly"
-  avatar           : "/assets/images/main/avatar.png"
+  avatar           : "/assets/images/main/avatar.svg"
   bio              : "Threat Analyst - Incident Response - Digital Forensics - Malware Analysis - Blue Team"
   location         : "Egypt"
   email            :
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fas fa-fw fa-envelope"
       url: "mailto:mo.ayman.sa2019@gmail.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-twitter"
       url: "https://twitter.com/0xElshazly"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -125,18 +125,21 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/0xElshazly/"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/0xElshazly"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/0xElshazly"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
+      # url: 
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:

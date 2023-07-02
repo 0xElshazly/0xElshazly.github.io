@@ -109,6 +109,9 @@ author:
   location         : "Egypt"
   email            :
   links:
+    - label: "CV"
+      icon: "fas fa-fw fa-star"
+      url: "https://0xelshazly.github.io/0xElshazly/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:mo.ayman.sa2019@gmail.com"

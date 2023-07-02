@@ -1,0 +1,37 @@
+# main links
+main:
+  
+  - title: "Digital Forensics"
+    url: /categories/#digital-forensics/
+  - title: "Threat Hunting"
+    url: /categories/#threat-hunting/
+  - title: "Malware Analysis"
+    url: /categories/#malware-analysis/
+  
+  - title: "CTF Writeups"
+    url: /categories/#ctf-writeups
+  
+  
+  - title: "Network"
+    url: /categories/#network
+  
+  - title: "Home"
+    url: /splash-page/
+  - title: "About"
+    url: /about
+  - title: "Search"
+    url: /search/
+    
+  - title: "Portfolio"
+    url: /portfolio/
+  
+  - title: "Grid Categories"
+    url: /categories-grid/
+  - title: "Grid Year Posts"
+    url: /year-archive-grid/
+  - title: "Posts by Category"
+    url: /categories/
+
+  - title: "Posts by Year"
+    url: /year-archive/
+  

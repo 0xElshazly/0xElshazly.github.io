@@ -11,25 +11,30 @@ main:
   - title: "CTF Writeups"
     url: /categories/#ctf-writeups
   
-  
-  - title: "Network"
-    url: /categories/#network
+  - title: "$whoami"
+    url: /about
+
+  - title: "Tutorials"
+    url: /categories/#tutorials
   
   - title: "Home"
     url: /splash-page/
   - title: "About"
     url: /about
+  - title: "Certifications"
+    url: /certifications
+
   - title: "Search"
     url: /search/
     
   - title: "Portfolio"
     url: /portfolio/
   
-  - title: "Grid Categories"
-    url: /categories-grid/
-  - title: "Grid Year Posts"
-    url: /year-archive-grid/
-  - title: "Posts by Category"
+  # - title: "Grid Categories"
+  #   url: /categories-grid/
+  # - title: "Grid Year Posts"
+  #   url: /year-archive-grid/
+  - title: "All Categories"
     url: /categories/
 
   - title: "Posts by Year"

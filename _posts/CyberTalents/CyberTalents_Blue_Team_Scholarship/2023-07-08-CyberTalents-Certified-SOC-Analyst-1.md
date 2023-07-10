@@ -7,7 +7,7 @@ header:
   overlay_filter: 0.5
 
 ribbon: Blue
-description: "CyberTalents Blue Team Scholarship 2023"
+description: "Lesson 1: Introduction to Cybersecurity  Lesson 2: Introduction to SOC "
 categories:
   - CyberTalents
   - SOC
@@ -22,79 +22,197 @@ toc_sticky: true
 toc_label: "On This Blog"
 toc_icon: "biohazard"
 classes: wide
-last_modified_at: 
+last_modified_at: 2023-07-09
 ---
 <span style="color: #909090">Category: SOC - CyberTalents - Trend Micro</span>
+
+# Agenda
+1. Cybersecurity Introduction
+2. SoC Arch
+3. Network Analysis
+4. Endpoints Analysis
+5. Web Analysis
+6. Email Analysis
+7. Log Analysis
+8. SIEM Solutions
+9. SIEM Use cases
+10. Digital Forensics & Incident response (DEIR)
 
 # Lesson 1: Introduction to Cybersecurity
 
 ## Cyber Attacks
-is a threat that targets computer systems, infeastructure, computer networks, and/or personal computer devices. Cyber-attacks are occurring all the time. Cyber attackers 
+A cyber-attack is a threat that targets computer systems, infrastructures, computer networks, and/or personal computer devices. Cyber-attacks are occurring all the time. Cyber attackers use malicious code to alter other code, logic, or data on a computer system in order to disrupt service or commit cyber-crimes such as information or identity theft.
 
-Types of Common Attacks:
+<p align="center">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/cyberattack.jpg" alt="Cyber Kill Chain" style="width:700px">
+</p>
+
+
+## Laws & Legalese
+General Data Protection Regulation (GDPR- EU) & Sarbanes Oxley (USA) Law No. 175 of 2018 Regarding Anti-Cyber and Information Technology Crimes (Egypt).
+
+According to article 14, individuals who gain access to or hack a website, private account, or prohibited information system, whether intentionally or unintentionally, may be penalized with imprisonment of no less than a year and/or a Fine OF EGP 50,OOO — 100,OOO. IF the hacking leads to the damage, erasure, altering, copying, or redistribution OF data or information, the term OF imprisonment would be For no less than two years.
+
+## Types of Common Attacks
   - Zero-day Attack
-  - Malicious Software
-  - Phishing 
+  - Malicious software
+  - Phishing
   - Insider Attacks
+  - Data exfiltration
+  - Lateral Movement
+  - Denial of Service (DOS)
+
+---
+### Zero Day Attacks
+<p align="center">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/img-1.png" alt="Zero Day" style="width:400px">
+</p>
+   - A Zero-day Attack is one in which an attacker exploits a zero-day vulnerability unknown to developers to infiltrate a system with malware or spyware or gains unwanted access to personal user information or sensitive data. 
+   - Once the vulnerability is discovered, developers must race to release a software patch to protect users before the attacker can compromise the system. 
+
+---
+### Malicious Software 
+<p align="center">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/Malware.png" alt="Malware" style="width:500px">
+</p>
+- Malicious software, known as Malware, is software designed to harm a computer or system. It’s introduced into a system in a number of ways. A user may download the executable file from a malicious site. 
+- The malware can arrive as a payload dropped or downloaded by other malware already introduced into the system.
+
+---
+### Phishing
+<p align="center">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/phish.png" alt="Phishing" style="width:500px">
+</p>
+Phishing is a type of social engineering where an attacker sends a fraudulent (e.g., spoofed, fake, or otherwise deceptive) message designed to trick a person into revealing sensitive information to the attacker or to deploy malicious software on the victim's infrastructure like ransomware (Wikipedia).
+
+---
+### Insider attacks
+- Insider attacks present some of the greatest threats to organizations. An insider threat is an attacker with access to network resources and sensitive data that steals or alters personal information or company secrets.
+- Insider threats are often terminated employees with legitimate credentials. Insider attacks can also come from outside attackers using employee credentials to infiltrate the network.
+
+---
+### Data Exfiltration
+<p align="center">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/insider.png" alt="Insider" style="width:500px">
+</p>
+- Data exfiltration, also known as data theft or extrusion, is one of the greatest threats to organizations. 
+- Data exfiltration refers to the unauthorized transfer of sensitive data from a network to a location controlled by the attacker such as an external storage device, personal or competitor email account, or cloud storage site for the purpose of committing cyber crimes such as identity theft or corporate espionage.
+
+|📌Data Loss Prevention (DLP) solutions are security tools that help organizations to ensure that sensitive data such as Personally Identifiable Information (PII) or Intellectual Property (IP) does not get outside the corporate network or to a user without access.
 
 
 
 ## Lateral Movement
+<p align="center">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/latrel.png" alt="Insider Movement" style="width:500px">
+</p>
 
 Lateral Movement is a strategic intrusion that spreads across a network compromising resources searching for key assets and sensitive data. Lateral movement is difficult to stop once the infection spreads from the initial infected resource to other resources on the network.
 
-## Denial of Service
+<p align="center">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/insiderattack.png" alt="Insider Movement" style="width:800px">
+</p>
 
+💡[Useful Notes](https://cyberhoot.com/cybrary/lateral-movement/)
+
+## Denial of Service
+<p align="center">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/dos.webp" alt="DOS" style="width:600px">
+</p>
 Denial of Service, is an attack that floods a network with traffic to overwhelm the network's resources and prevent legitimate users from accessing resources on the network.
 
-## Attack Stages
+## Attack Stages (Cyber Kill Chain)
 
-## Cyber Kill Chain
 <p align="center">
-  <img src="/assets/images/CyberTalents/SOC_Analyst/killchain.webp" alt="Cyber Kill Chain" style="width:1000px">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/Cyber_Kill_Chain.jpg" alt="Cyber Kill Chain" style="width:800px">
 </p>
 
 
 
-What is the Cyber Kill Chain?
-- The Cyber Kill Chain is a model that was developed by Lockheed Martin back in 2011 with the purpose of helping organizations better understand the phases of various cyberattacks. However, while many may think this is simply a referential model, it's one that can be used to identify at which stages a security team can prevent, detect, or intercept an attack in progress.
+### What is the Cyber Kill Chain?
+- The Cyber Kill Chain is a model that was developed by Lockheed Martin back in 2011 with the purpose of helping organizations better understand the phases of various cyberattacks. 
+- However, while many may think this is simply a referential model, it's one that can be used to identify at which stages a security team can prevent, detect, or intercept an attack in progress.
+- Cyber Kill Chain is used as a reference, a way to better understand our adversaries, but it can be used as a guide for implementing better defenses as well. 
+- Not only does the Cyber Kill Chain lay out the anatomy of a cyberattack, it also highlights the increased level of impact an attack has as it progresses through each stage
 
-- Cyber Kill Chain is used as a reference, a way to better understand our adversaries, but it can be used as a guide for implementing better defenses as well. Not only does the Cyber Kill Chain lay out the anatomy of a cyberattack, it also highlights the increased level of impact an attack has as it progresses through each stage
+---
+
+#### Recon
+This step involves passive scanning plus OSINT (i.e. social media, search engines, etc). It can also involve actively scanning public-facing IPs.
+
+#### Weaponize
+This is where the RAT (Remote Access Tool) is added to the exploit. The exploit can reside on a web page or a malicious macro-based document attached to an email. In this stage, the adversary also considers the method of delivery.
+
+#### Deliver
+This phase covers the delivery of the weaponized tool. The delivery method can be via email, social media, or a watering hole attack, to name a few.
+
+#### Exploit
+This phase is the actual exploitation. This is when a user opens the document attached to an email, clicks a link, etc. This can be a 2-step process where a loader is used to download the actual RAT. The loader will typically be small in size and reside only in memory.
+
+#### Install
+At this point, in most cases, additional tools are installed via the RAT. Other tools can be a network scanner, a keylogger, etc.
+
+#### Command & Control
+This is the command & control (C2) phase. This is when the victim's machine will call out to an IP or domain and provide the adversary command-line access to the box.
+
+#### Action
+This is where the goal is achieved. The goal can be exfiltration. 
+
+This is when:
+- The adversary scans the network, looks at/reviews data and grabs what they are looking for.
+- What you’re protecting leaves the network.
 
 ## Attackers Tools Vs Techniques
+<p align="center">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/tool.png" alt="Tools Vs Techniques" style="width:800px">
+</p>
 
-<table>
-<thead>
-    <tr style="border:2px solid #b3adad;">
-        <td style="border:2px solid #b3adad;">Tools</td>
-        <td style="border:2px solid #b3adad;">Techniques</td>
-    </tr>
-</thead>
-<tbody>
-    <tr style="border:2px solid #b3adad;">
-        <td style="border:2px solid #b3adad;">&nbsp;MimiKatz</td>
-        <td style="border:2px solid #b3adad;">Scanning</td>
-    </tr>
-    <tr style="border:2px solid #b3adad;">
-        <td style="border:2px solid #b3adad;">&nbsp;Metasploit</td>
-        <td style="border:2px solid #b3adad;">Phishing</td>
-    </tr>
-    <tr style="border:2px solid #b3adad;">
-        <td style="border:2px solid #b3adad;">&nbsp;Cobalt Strike</td>
-        <td style="border:2px solid #b3adad;">Credential Dumping</td>
-    </tr>
-    <tr style="border:2px solid #b3adad;">
-        <td style="border:2px solid #b3adad;">&nbsp;Aircrack-NG	</td>
-        <td style="border:2px solid #b3adad;">Data Exfil</td>
-    </tr>
-</tbody>
-</table>
+Red Team Solution (
+[MimiKatz](https://github.com/ParrotSec/mimikatz) - 
+[Metasploit](https://www.metasploit.com/) - 
+[Cobalt Strike](https://www.cobaltstrike.com/) - 
+[Aircrack-NG](https://www.aircrack-ng.org/) )
+
+---
+
+## APT Evolution
+APT stands for Advanced Persistent Threat. It is a term used in the field of cybersecurity to describe a sophisticated and targeted cyber attack carried out by highly skilled adversaries. APTs are typically conducted by well-resourced threat actors, such as nation-states, organized crime groups, or advanced hacking groups.
+
+<p align="center">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/apt.png" alt="APT" style="width:800px">
+</p>
+
+The primary goal of an APT attack is to gain unauthorized access to a targeted network or system and maintain a long-term presence without being detected. Unlike typical cyber attacks that aim for immediate gains or disruptions, APTs are characterized by their persistence and stealth. They are often carried out over an extended period, sometimes lasting months or even years.
 
 ## Defense in Depth
+<p align="center">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/depth.png" alt="APT" style="width:400px">
+</p>
 
 Defence in Depth is a concept used to describe a defence strategy in which security controls in multiple layers work together to form a single, cohesive security structure.
 
-## CVE
+- Policies, Procedures, Awareness:
+  - Security Policies, processes, and procedures
+  - Awareness and training
+- Physical Security:
+  - Gates, fences 
+  - Badge readers, locks
+  - Closed Circuit Television (CCTV)
+- Perimeter Security:
+  - Firewalls 
+  - VPNs
+- Network Security:
+  - Virtual local area networks (VLANs) 
+  - Network intrusion detection/protection systems (NIDS/NIPS)
+- Host Security:
+  - Antivirus
+  - Host-based intrusion detection/protection systems (HIDS/HIPS)
+- Application Security:
+  - Secure Sockets Layer (SSL), Transport Layer Security (TLS)
+- Data Security:
+  - Hashing, Encrypting
+
+## What is CVE?
 
 Common Vulnerabilities and Exposures (CVE) is a database of publicly disclosed information security issues. A CVE number uniquely identifies one vulnerability from the list. CVE provides a convenient, reliable way for vendors, enterprises, academics, and all other interested parties to exchange information about cyber security issues.
 
@@ -141,7 +259,7 @@ Cyber Defence provides the organization with foundational capabilities to detect
 ## Understand the SOC Environment
 
 <p align="center">
-  <img src="/assets/images/CyberTalents/SOC_Analyst/soc-team.png" alt="SOC Team" style="width:1000px">
+  <img src="/assets/images/CyberTalents/SOC_Analyst/soc-envi.png" alt="SOC Team" style="width:1000px">
 </p>
 
 #### People

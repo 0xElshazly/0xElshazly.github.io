@@ -19,8 +19,7 @@ main:
   
   - title: "Home"
     url: /splash-page/
-  - title: "About"
-    url: /about
+  
   - title: "Certifications"
     url: /certifications
 

@@ -1,24 +1,34 @@
 ---
 permalink: /about
-title: "$whoami"
+title: "Mohamed Ayman Said Elshazly"
 layout: single
 classes: "wide"
 author_profile: true
 last_modified_at: 2023-07-08
 ---
+Fresh Information Security and Digital Forensics graduate working as a Security Analyst (SOC).
+
+
 ## Contact Information:
 <i class="fas fa-fw fa-home"></i> Cairo, Egypt
 
 <i class="fas fa-fw fa-envelope"></i> mohamed.ayman.alshazly@gmail.com
 
-<i class="fas fa-fw fa-phone"></i> +201201632406
+<i class="fas fa-fw fa-mobile"></i> +201201632406
 
 <a href="https://www.linkedin.com/in/0xElshazly/"><i class="fab fa-fw fa-linkedin"></i></a>
+<a href="0xelshazly.github.io"><i class="fab fa-fw fa-blogger"></i></a>
 <a href="https://twitter.com/0xElshazly"><i class="fab fa-fw fa-twitter"></i></a>
 <a href="https://github.com/0xElshazly"><i class="fab fa-fw fa-github"></i></a>
 
+
+
 ## <i class="fas fa-fw fa-user"></i> About
+
+
+<div style="text-align: justify">
 I am a fresh Information Security and Digital Forensics graduate working as a Security Analyst (SOC). I am interested in the IT sector and I am specialized in Cyber Security. Currently seeking a position, whether it be a job or an internship, I am passionate about working in an environment where I can use my knowledge and skills to actively contribute to the growth of the organization and be a valuable member of the team.
+</div>
 
 ## <i class="fas fa-fw fa-user-graduate"></i> Education
 
@@ -65,6 +75,7 @@ Bachelor’s Degree in Computer Science:
 </div>
 
 ## <i class="fas fa-fw fa-trophy"></i> Projects
+
 - RansomHunter (Ransomware Detection Using Machine Learning - Graduation Project)
   ```Ransomware detection using machine learning allows for the detection of previously unseen threats and the automation of threat detection, increasing the efficiency and effectiveness of the overall detection process. provide proactive measures to identify and stop potential cyber attacks before they can cause harm to the system.```
   
@@ -89,3 +100,4 @@ Bachelor’s Degree in Computer Science:
 
 
 
+{% include gallery id="layouts_gallery"%}

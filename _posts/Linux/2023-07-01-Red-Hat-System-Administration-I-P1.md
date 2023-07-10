@@ -316,6 +316,7 @@ if your command is so long use (`\`) to continue a long command on another line
   <img src="/assets/images/linux/RHCSA-Rapid-Track/shortcut.png" alt="Terminal Shortcuts" style="width:1000px">
 </p>
 
+
 ```python
 ```
 
@@ -333,4 +334,4 @@ if your command is so long use (`\`) to continue a long command on another line
 ## Section 2.8: Summary
 
 
-> Congrats🎉 For Reading RH 124 Part 1 Go To [Part 2](/linux/red%20hat/tutorials/Red-Hat-System-Administration-I-P2/ "Part 2 RH124").
+> Thanks For Reading RH 124 Part 1 Go To [Part 2](/linux/red%20hat/tutorials/Red-Hat-System-Administration-I-P2/ "Part 2 RH124").

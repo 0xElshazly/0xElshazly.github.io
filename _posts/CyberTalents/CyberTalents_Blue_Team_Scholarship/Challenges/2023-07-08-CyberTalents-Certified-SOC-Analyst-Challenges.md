@@ -12,7 +12,6 @@ categories:
   - Challenges
   - SOC
   - CyberTalents
-  - Tutorials
   - CTF
 tags: 
   - SOC

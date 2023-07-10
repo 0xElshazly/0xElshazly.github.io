@@ -115,16 +115,19 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:mo.ayman.sa2019@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/0xElshazly/"
+    - label: "Blog"
+      icon: "fab fa-fw fa-blogger"
+      url: "https://0xelshazly.github.io/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter"
       url: "https://twitter.com/0xElshazly"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/0xElshazly"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/0xElshazly/"
-
+    
 # Site Footer
 footer:
   links:
@@ -149,7 +152,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-
+    - label: "Blog"
+      icon: "fab fa-fw fa-blogger"
+      url: "https://0xelshazly.github.io/"
 
 # Reading Files
 include:

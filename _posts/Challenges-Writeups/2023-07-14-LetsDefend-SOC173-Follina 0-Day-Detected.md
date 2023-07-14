@@ -2,8 +2,8 @@
 title: "SOC173 - Follina 0-Day Detected"
 
 header:
-  teaser: /assets/images/LetsDefend/SOC173/profile.jpg
-  overlay_image: /assets/images/LetsDefend/SOC173/profile.jpg
+  teaser: /assets/images/LetsDefend/SOC173/follina.svg
+  overlay_image: /assets/images/LetsDefend/SOC173/Follina-CVE-2022-30190-Header-B.webp
   overlay_filter: 0.5
 
 ribbon: Green

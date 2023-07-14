@@ -9,9 +9,8 @@ header:
 ribbon: Blue
 description: "Lesson 1: Introduction to Cybersecurity  Lesson 2: Introduction to SOC "
 categories:
-  - CyberTalents
-  - SOC
   - Tutorials
+  - CyberTalents
 tags: 
   - SOC
   - CyberTalents

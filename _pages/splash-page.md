@@ -8,12 +8,12 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/main/header.jpg
   actions:
-    - label: "Learn More"
-      url: "/terms/"
+    - label: "More About Me"
+      url: "/about/"
   caption: "Linkedin: [**LinkedIn Account**](https://www.linkedin.com/in/0xelshazly/)"
 excerpt: "SOC Analyst Tier 1"
 intro: 
-  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
+  - excerpt: '📌 Welcome To My Blue Team Blog 📌'
 feature_row:
   - image_path: 
     image_caption: "Image courtesy of []()"
@@ -31,12 +31,12 @@ feature_row:
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
 feature_row2:
-  - image_path: 
-    alt: "placeholder image 2"
-    title: "Placeholder Image Left Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
-    url: "#test-link"
-    btn_label: "Read More"
+  - image_path: /assets/images/main/dark_illustration.svg
+    alt: "SOC Analyst Tier 1"
+    title: "SOC Analyst Tier 1"
+    excerpt: 'I am a fresh Information Security and Digital Forensics graduate working as a Security Analyst (SOC). I am interested in the IT sector and I am specialized in Cyber Security. Currently seeking a position, whether it be a job or an internship, I am passionate about working in an environment where I can use my knowledge and skills to actively contribute to the growth of the organization and be a valuable member of the team.'
+    url: "https://www.linkedin.com/in/0xElshazly/"
+    btn_label: "LinkedIn"
     btn_class: "btn--primary"
 feature_row3:
   - image_path: 
@@ -58,10 +58,14 @@ feature_row4:
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row %}
+<div style="text-align: center;">
+  <a href="{{ "/" | relative_url }}" class="btn btn--info btn--meduim">Click To Show Posts</a>
+</div>
 
-{% include feature_row id="feature_row2" type="left" %}
+<!-- {% include feature_row %} -->
 
-{% include feature_row id="feature_row3" type="right" %}
+<!-- {% include feature_row id="feature_row2" type="left" %} -->
 
-{% include feature_row id="feature_row4" type="center" %}
+<!-- {% include feature_row id="feature_row3" type="right" %} -->
+
+<!-- {% include feature_row id="feature_row4" type="center" %} -->

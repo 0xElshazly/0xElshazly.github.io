@@ -2,8 +2,8 @@
 title: "SOC146 - Phishing Mail Detected - Excel 4.0 Macros"
 
 header:
-  teaser: /assets/images/LetsDefend/SOC146/SOC146s.svg
-  overlay_image: /assets/images/LetsDefend/SOC146/SOC146s.svg
+  teaser: /assets/images/LetsDefend/SOC146/SOC146.jpg
+  overlay_image: /assets/images/LetsDefend/SOC146/SOC146.jpg
   overlay_filter: 0.5
 
 ribbon: DarkSlateBlue

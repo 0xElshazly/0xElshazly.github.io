@@ -232,9 +232,47 @@ Notes:
 - The flag doesn’t contain spaces
 
 ### Tools:
-- 
+- Process Hacker
+- Process Monitor (Procmon)
 
 🚩Challenge [Link](/assets/images/CyberTalents/SOC_Analyst/IOSeen.exe)
 
 
 ### 🧑🏻‍💻 Lets Solve This..!
+
+Lets try to execute the `IOSeen.exe` in my isolated windows 10 machine and show the result in `Process Hacker` tool.
+
+Open `Process Hacker` after you run the `IOSeen.exe`:
+
+| ![Process List](/assets/images/CyberTalents/SOC_Analyst/challenge/1.png) | 
+|:--:| 
+| *Screenshot for the execution of the .exe file* |
+
+Now lets look to `Process Hacker` and see if any change will be happend:
+
+| ![Process List](/assets/images/CyberTalents/SOC_Analyst/challenge/3.png) | 
+|:--:| 
+| *IOSeen.exe Process* |
+
+From above image the second process was opened by the `IOSeen.exe` is `conhost.exe` and `WarFault.exe`
+
+The proces name and its state is the first part of the flag.
+
+<details>
+<summary>
+Flag
+</summary>
+flag{cmd.exesuspended}
+</details>
+
+---
+
+
+
+---
+
+Protect Your Digital Presence & Stay Cyber Safe 💙
+
+☕[Buy Me a Coffee](https://www.buymeacoffee.com/0xelshazly)
+
+Thanks🌸

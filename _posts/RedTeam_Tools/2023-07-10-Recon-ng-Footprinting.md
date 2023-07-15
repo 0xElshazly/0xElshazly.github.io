@@ -356,4 +356,8 @@ show the result of profile command :
 
 ---
 
-**Thanks For Reading🎉**
+Protect Your Digital Presence & Stay Cyber Safe 💙
+
+☕[Buy Me a Coffee](https://www.buymeacoffee.com/0xelshazly)
+
+Thanks🌸

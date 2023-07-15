@@ -3,7 +3,7 @@ title: "SOC146 - Phishing Mail Detected - Excel 4.0 Macros"
 
 header:
   teaser: /assets/images/LetsDefend/SOC146/SOC146.svg
-  overlay_image: /assets/images/LetsDefend/SOC146/SOC146.jpg
+  overlay_image: /assets/images/LetsDefend/SOC146/Excel.jpg
   overlay_filter: 0.5
 
 ribbon: DarkSlateBlue
@@ -123,6 +123,8 @@ According to VT, the three files are flagged malicious:
 ### ANY.RUN
 
 Next, we will simulate this artefact’s behaviour on compromised system by submitting it to `ANY.RUN`
+
+💡Look at `ANY.RUN` report from [here](https://any.run/report/1df68d55968bb9d2db4d0d18155188a03a442850ff543c8595166ac6987df820/c4210bc2-1ada-411f-a98f-040ac7f3a6f6)
 
 | ![ANY.RUN](/assets/images/LetsDefend/SOC146/10.png) |
 |:--:| 

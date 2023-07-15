@@ -127,6 +127,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/0xElshazly"
+    - label: "Buy Me a Coffee"
+      icon: "fas fa-mug-hot"
+      url: "https://www.buymeacoffee.com/0xelshazly"
     
 # Site Footer
 footer:
@@ -155,7 +158,9 @@ footer:
     - label: "Blog"
       icon: "fab fa-fw fa-blogger"
       url: "https://0xelshazly.github.io/"
-
+    - label: "Buy Me a Coffee"
+      icon: "fas fa-mug-hot"
+      url: "https://www.buymeacoffee.com/0xelshazly"
 # Reading Files
 include:
   - .htaccess

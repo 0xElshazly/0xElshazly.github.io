@@ -2,8 +2,8 @@
 title: "Introduction to SIEM Solution"
 
 header:
-  teaser: /assets/images/Tutorials/SIEM01/SIEM.svg
-  overlay_image: /assets/images/Tutorials/SIEM01/SIEM.jpg
+  teaser: /assets/images/Tutorials/SIEM01/SIEM01.jpg
+  overlay_image: /assets/images/Tutorials/SIEM01/SIEM01.jpg
   overlay_filter: 0.5
 
 ribbon: Blue

@@ -9,9 +9,8 @@ header:
 ribbon: DarkRed
 description: "Open Source Intelligence gathering tool aimed at reducing the time spent harvesting information from open sources."
 categories:
-  - Red Team
   - Tools
-  - Tutorials
+  - Recon-ng
 tags: 
   - Linux
   - Tools

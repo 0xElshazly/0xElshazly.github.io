@@ -215,34 +215,33 @@ flag{tshArk_Is_Awes0me_Netw0rking_to0l}
 </details>
 
 ---
-# 6. IOSeen
+# 6. WormSeen
 
 ### Description
-Answer the following questions: 
+OOur EDR has flagged suspicious traffic from production endpoint, after reviewing the respective process generating the traffic and another alert has been alerted “Worm Detected” in our SIEM
 
-1. What is the second process that gets created by this executable and what is its state? 
-2. What is the registry key that this executable is trying to access and gets access denied? 
-3. What will be a good host base IOC (Mutex Name)? 
+You decided to escalate the case to IR team to further investigate and answer the below questions 
 
-Flag format: Flag{process name_state_registry key_Host base IOC} 
+Questions:
 
-Notes:  
-- The process state is in lowercase. 
-- Don’t run the sample as administrator. 
-- The flag doesn’t contain spaces
+1. What is the range of worm spreading (x.x.x.x/xx) ?
+2. Destination target port of the attack (XX)?
+3. How many hosts might be affected by the worm (XX)?
+ 
+- Flag format: flag{Answer1:Answer2:Answer3}.
 
 ### Tools:
 - Process Hacker
-- Process Monitor (Procmon)
+- wireshark
 
-🚩Challenge [Link](/assets/images/CyberTalents/SOC_Analyst/IOSeen.exe)
+🚩Challenge [Link](https://hubchallenges.s3.eu-west-1.amazonaws.com/foren/worm.zip)
 
 
 ### 🧑🏻‍💻 Lets Solve This..!
 
-Lets try to execute the `IOSeen.exe` in my isolated windows 10 machine and show the result in `Process Hacker` tool.
+Lets try to unzip the `worm.zip` in my isolated windows 10 machine, execute this file and show the result in `Process Hacker` tool.
 
-Open `Process Hacker` after you run the `IOSeen.exe`:
+Open `Process Hacker` after you run the `worm.exe`:
 
 | ![Process List](/assets/images/CyberTalents/SOC_Analyst/challenge/1.png) | 
 |:--:| 
@@ -250,19 +249,34 @@ Open `Process Hacker` after you run the `IOSeen.exe`:
 
 Now lets look to `Process Hacker` and see if any change will be happend:
 
+| ![Process List](/assets/images/CyberTalents/SOC_Analyst/challenge/2.png) | 
+|:--:| 
+| *worm.exe Process* |
+
+Then go to network tap to see the connection that the file make:
+
 | ![Process List](/assets/images/CyberTalents/SOC_Analyst/challenge/3.png) | 
 |:--:| 
-| *IOSeen.exe Process* |
+| *worm.exe Network* |
 
-From above image the second process was opened by the `IOSeen.exe` is `conhost.exe` and `WarFault.exe`
+From above image after the file was executed it started to scan the network Lets open `Wireshark` to see the range of scaned network and answer the flag.!
 
-The proces name and its state is the first part of the flag.
+| ![Process List](/assets/images/CyberTalents/SOC_Analyst/challenge/4.png) | 
+|:--:| 
+| *Wireshark* |
 
+Now we want to know the range of ip address that the file scaned lets know from wireshark direct from first ip `192.168.1.171` and the last one `192.168.1.255`
+
+| ![Process List](/assets/images/CyberTalents/SOC_Analyst/challenge/5.png) | 
+|:--:| 
+| *Endpoint statistics* |
+
+Now concatenate all above answer to capture the flag..!
 <details>
 <summary>
 Flag
 </summary>
-flag{cmd.exesuspended}
+flag{192.168.1.0/24:22:85}
 </details>
 
 ---

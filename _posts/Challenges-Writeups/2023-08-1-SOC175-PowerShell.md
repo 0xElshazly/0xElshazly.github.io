@@ -6,13 +6,13 @@ header:
   overlay_image: /assets/images/LetsDefend/SOC175/SOC175.jpg
   overlay_filter: 0.5
 
-ribbon: DarkRed
+ribbon: DarkBlue
 description: "This 0-day vulnerability (CVE-2022-41082) is being actively exploited in the wild."
 categories:
   - Security Alert
   - LetsDefend
 tags: 
-  - FakeGPT
+  - PowerShell
   - SOC
   - LetsDefend
   - Challenges

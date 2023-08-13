@@ -34,7 +34,10 @@ I am a fresh Information Security and Digital Forensics graduate working as a Se
 
 Bachelor’s Degree in Computer Science:
 - Faculty of Computers and Artificial Intelligence Benha University ```2019 - 2023```
--  Department Information Security and Digital Forensics - ```GPA (3.7) Excellent```
+- Department Information Security and Digital Forensics - ```GPA (3.7) Excellent```
+
+Information Technology Institute (ITI):
+- Incident Response and Digital Forensics Program ```July 2023```
 
 ## <i class="fas fa-fw fa-briefcase"></i> Internships
 - ```July 2023 - Present```

@@ -9,7 +9,7 @@ header:
 ribbon: DarkRed
 description: "Unraveling the Enigma of Company Data Sale and Unveiling the Cryptic Clue"
 categories:
-  - Security Alert
+  - Investigation
   - LetsDefend
 tags: 
   - Data Breach
@@ -249,14 +249,6 @@ impacket
 </summary>
 f59095f0ab15f26a1ead7eed8cdb4902
 </details>
-
----
-
-> After i investigate this case i want to send my reaction face to my friend Eng. Ismael 😂
-
-<p align="center">
-  <img src="/assets/images/LetsDefend/PRIVATE-CASE-1/stick.jpg" alt="Terminal Shortcuts" style="width:300px">
-</p>
 
 
 ---

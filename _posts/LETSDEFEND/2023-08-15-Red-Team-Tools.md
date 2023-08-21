@@ -2,8 +2,8 @@
 title: "Red Team Tools"
 
 header:
-  teaser: /assets/images/LetsDefend/PRIVATE-CASE-1/dra_8l2AQlZ.jpeg
-  overlay_image: /assets/images/LetsDefend/PRIVATE-CASE-1/dra_8l2AQlZ.jpeg
+  teaser: /assets/images/LetsDefend/PRIVATE-CASE-1/PRIVATE-CASE-11.jpg
+  overlay_image: /assets/images/LetsDefend/PRIVATE-CASE-1/PRIVATE-CASE-11.jpg
   overlay_filter: 0.5
 
 ribbon: DarkBlue

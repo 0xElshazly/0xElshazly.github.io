@@ -8,12 +8,13 @@ main:
   - title: "Malware Analysis"
     url: /categories/#malware-analysis/
   
-  - title: "CTF Writeups"
-    url: /categories/#ctf-writeups
-  
   - title: "$whoami"
     url: /about
-
+  
+  # - title: "CTF Writeups"
+  #   url: /categories/#ctf-writeups
+  
+  
   - title: "Tutorials"
     url: /categories/#tutorials
   
@@ -26,8 +27,8 @@ main:
   - title: "Search"
     url: /search/
     
-  - title: "Portfolio"
-    url: /portfolio/
+  # - title: "Portfolio"
+  #   url: /portfolio/
   
   # - title: "Grid Categories"
   #   url: /categories-grid/

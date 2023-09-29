@@ -4,7 +4,7 @@ title: "Mohamed Ayman Said Elshazly"
 layout: single
 classes: "wide"
 author_profile: true
-last_modified_at: 2023-07-08
+last_modified_at: 2023-10-01
 ---
 Fresh Information Security and Digital Forensics graduate working as a Security Analyst (SOC).
 
@@ -62,9 +62,10 @@ Information Technology Institute (ITI):
 
 ## <i class="fas fa-fw fa-award"></i> Awards and Achievements
 - Top 10 in We innovative Hackathon by We, EGCERT and NTRA
-- Top 2% TryHackMe Platform for Learning Cyber Security
+- Top 1% TryHackMe Platform for Learning Cyber Security
 
 ## <i class="fas fa-fw fa-certificate"></i> Certificates and Courses
+- **Certified Incident Responder (eCIR) - eLearnSecurity & INE**
 - Network and Information Security (NIS) DEY - NTI
 - Certified Huawei Certified ICT Associate (HCIA) Datacom
 - Cisco Certified Network Associate (CCNA) - NTI
@@ -98,7 +99,7 @@ Information Technology Institute (ITI):
 ---
 
 <div style="text-align: center;">
-  <a href="{{ "/assets/images/mohamed_private/cv/Mohamed_Ayman_Said_CV_9723.pdf" | relative_url }}" class="btn btn--danger btn--large">Download CV</a>
+  <a href="{{ "/assets/images/mohamed_private/cv/Mohamed_Ayman_Said_CV.pdf" | relative_url }}" class="btn btn--danger btn--large">Download CV</a>
 </div>
 
 

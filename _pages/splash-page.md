@@ -6,14 +6,14 @@ date: 2016-03-23T11:48:41-04:00
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/main/header.jpg
+  overlay_image: /assets/images/main/0xElshazly.png
   actions:
     - label: "More About Me"
       url: "/about/"
   caption: "Linkedin: [**LinkedIn Account**](https://www.linkedin.com/in/0xelshazly/)"
-excerpt: "SOC Analyst Tier 1"
+excerpt: "Incident Response & Digital Forensics - SOC Analyst"
 intro: 
-  - excerpt: '📌 Welcome To My Blue Team Blog 📌'
+  - excerpt: '📌 Welcome To Blue Team Adventures 📌'
 feature_row:
   - image_path: 
     image_caption: "Image courtesy of []()"
@@ -32,8 +32,8 @@ feature_row:
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
 feature_row2:
   - image_path: /assets/images/main/dark_illustration.svg
-    alt: "SOC Analyst Tier 1"
-    title: "SOC Analyst Tier 1"
+    alt: "Incident Response & Digital Forensics | SOC Analyst"
+    title: "Incident Response & Digital Forensics | SOC Analyst"
     excerpt: 'I am a fresh Information Security and Digital Forensics graduate working as a Security Analyst (SOC). I am interested in the IT sector and I am specialized in Cyber Security. Currently seeking a position, whether it be a job or an internship, I am passionate about working in an environment where I can use my knowledge and skills to actively contribute to the growth of the organization and be a valuable member of the team.'
     url: "https://www.linkedin.com/in/0xElshazly/"
     btn_label: "LinkedIn"

@@ -7,7 +7,7 @@ header:
 ribbon: Blue
 description: "Detecting & Investigating Login Brute-Force Attacks Using ELK SIEM and PCAP Analysis"
 categories:
-  - Security Alert
+  - SIEM Alert
 tags:
   - SOC
   - ELK

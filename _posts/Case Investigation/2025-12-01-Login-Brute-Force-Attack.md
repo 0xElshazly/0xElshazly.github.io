@@ -3,7 +3,7 @@ title: "Brute-Force Attacks Using ELK SIEM and PCAP Analysis"
 
 header:
   teaser:  /assets/images/investigation/force/44-BruteForce.jpg
-  overlay_image: /assets/images/investigation/force/a.webp
+  overlay_image: /assets/images/investigation/force/44-BruteForce.jpg
 ribbon: Blue
 description: "Detecting & Investigating Login Brute-Force Attacks Using ELK SIEM and PCAP Analysis"
 categories:
